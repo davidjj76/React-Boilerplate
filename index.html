@@ -11,6 +11,7 @@
 
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
   <title>React boilerplate</title>
 </head>
@@ -20,9 +21,9 @@
     You need to enable JavaScript to run this app.
   </noscript>
   <div id="root"></div>
-  <script>
+  <script type="text/babel">
     ReactDOM.render(
-      React.createElement('h1', null, 'Hello world!'),
+      <h1>Hello World!</h1>,
       document.getElementById('root')
     );
   </script>
